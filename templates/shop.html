@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Carousel and Item List</title>
+    <link rel="stylesheet" href="../static/shop.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hambuger">
+            <div class="logo"> ZEX</div>
+            <div class="mini_icons">
+                <a href="#"><img src="../img/profile.png" alt="Menu"></a>
+                <a href="#"><img src="../img/profile.png" alt="cart"></a>
+                <a href="#"><img src="../img/profile.png" alt="cart"></a>
+            </div>
+            </div>
+            <menu>
+                <ul class="menu_list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <li class="dropdown_menu">
+                        <a href="#">Categories</a>
+                        <div class="dropdown-content">
+                            <a href="#">All Products</a>
+                            <a href="0-index.html">HP Laptops</a>
+                            <a href="#">Lenovo Laptops</a>
+                            <a href="#">Dell Laptops</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="detail.html">About Us</a>
+                    </li>
+
+                    <div class="icons">
+                    <a href="#"><img src="../img/profile.png" alt="user_account"></a>
+                    <a href="#"><img src="../img/profile.png" alt=""></a>
+                    </div>
+                </ul>
+
+                
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item" data-id="1">
+                    <img src="https://via.placeholder.com/300x200" alt="Item 1">
+                    <h2>Item 1</h2>
+                    <p>$10</p>
+                </div>
+                <div class="carousel-item" data-id="2">
+                    <img src="https://via.placeholder.com/300x200" alt="Item 2">
+                    <h2>Item 2</h2>
+                    <p>$20</p>
+                </div>
+                <div class="carousel-item" data-id="3">
+                    <img src="https://via.placeholder.com/300x200" alt="Item 3">
+                    <h2>Item 3</h2>
+                    <p>$30</p>
+                </div>
+                <div class="carousel-item" data-id="4">
+                    <img src="https://via.placeholder.com/300x200" alt="Item 4">
+                    <h2>Item 4</h2>
+                    <p>$40</p>
+                </div>
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <section class="item-list">
+            <h2>More Items</h2>
+            <div class="item" data-id="5">
+                <img src="../img/dell.jpg" alt="Item 5">
+                <h3>Item 5</h3>
+                <p>$50</p>
+            </div>
+            <div class="item" data-id="6">
+                <img src="../img/hp.jpg" alt="Item 6">
+                <h3>Item 6</h3>
+                <p>$60</p>
+            </div>
+            <div class="item" data-id="7">
+                <img src="https://via.placeholder.com/150x100" alt="Item 7">
+                <h3>Item 7</h3>
+                <p>$70</p>
+            </div>
+            <div class="item" data-id="8">
+                <img src="https://via.placeholder.com/150x100" alt="Item 8">
+                <h3>Item 8</h3>
+                <p>$80</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Sign up for our newsletter to get the latest updates and special offers.</p>
+                <form id="newsletterForm">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <br><br><br><br><br>
+    <footer>
+        <p>&copy; 2024 Laptop Store. All rights reserved.</p>
+    </footer>
+
+    <script src="../Asset/shop.js"></script>
+</body>
+</html>

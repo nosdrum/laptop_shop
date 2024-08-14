@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="../static/regiter.css">
+</head>
+<body>
+    <center>
+    <div class="login">
+        <h1>Login</h1>
+        <div class="links">
+            <a href="login.html" class="active">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+        <br>
+        <form action="{{ url_for('login') }}" method="post">
+            <label for="Email">
+                <i class="fas fa-envelope"></i>
+            </label>
+            <input type="email" name="email" placeholder="example@gmail.com" id="email" required>
+            <br>
+            <label for="username">
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" name="username" placeholder="Username" id="username" required>
+            <br>
+            <label for="password">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <div class="msg">{{ msg }}</div>
+            <input type="submit" value="Login" class="btn">
+            <br><br>
+            
+        </form>
+        
+        </div>
+        </center>
+    </body>
+</html>
