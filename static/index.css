@@ -189,7 +189,7 @@ section .caru h1 span1 {
     height: auto;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
-    border-radius: 50px;
+    border-radius: 5px;
 }
 
 .product-card h3 {
